@@ -1,0 +1,12 @@
+Linked list is not a python built in type must build it with
+
+class ListNode():
+    def __init__(self, data=0, next_node=None):
+        self.data = data
+        self.next_node = next_node
+
+Helpful functions
+
+def insert_node(node, new_node):
+    new_node.next_node = node.next_node
+    node.next_node = new_node

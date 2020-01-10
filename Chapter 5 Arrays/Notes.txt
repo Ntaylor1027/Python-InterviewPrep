@@ -1,0 +1,38 @@
+Array Notes
+
+Instantiating 
+    [3,2,1]
+    [1] + [0] * 10
+    list(range(10))
+
+Basic Operations
+    len(A)
+    A.append(10)
+    A.remove(2)
+    A.insert(3,28)
+
+2d arrays 
+    [[0,1,2],[3,4,5]]
+
+Check for value O(n)
+    x in A
+
+Copies
+    copy.copy()
+    copy.deepcopy()
+
+Key methods
+    min(A)
+    max(A)
+    binary search = bisect.bisect_right(A,6)
+    A.reverse()
+    reversed(A) #iterator
+    A.sort()
+    sorted(A) #iterator
+    
+Slicing
+    A[i:j:k] # start, ex-end, step
+
+List comprohension
+    [x**2 for x in range(6)] = [0,1,4,9,16,25]
+    

@@ -1,0 +1,12 @@
+Stack and Queue Notes
+
+Stacks = LIF0, Queue = FIFO
+
+Stacks  
+    - Pushs and Pops
+
+Queue
+    - deque = double ended Queue
+        - Front: push Pops
+        - End: inject eject
+    - collections.deque

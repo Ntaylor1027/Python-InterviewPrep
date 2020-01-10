@@ -1,0 +1,18 @@
+String Notes
+
+    - (~i) == (-i + 1)
+
+Key Operators
+    indexing s[i]
+    len(s)
+    s + t
+    s[2:4]
+    s in t
+    s.strip()
+    s.startswith(prefix)
+    s.endswith(suffix)
+    'This is a, string, ".split(",")
+    3 * '01'
+    ','.join(('Gauss','Prince of mathm'))
+    s.tolower()
+    

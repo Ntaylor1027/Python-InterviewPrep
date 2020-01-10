@@ -1,0 +1,28 @@
+Binary Trees Notes
+
+- A Binary Tree is either empty or a root with a left and right node
+- Most commonly a binary search tree where left is less than root and right is greater
+- Prototype
+
+class BinaryTreeNode:
+    def __init__(self, data=None, left=None, right=None):
+        self.data=data
+        self.left=left
+        self.right=right
+
+- depth of a node n is the number of nodes on the search path from root to n not including node 
+  itself
+
+- The height of a binary tree is the maximum depth of any node 
+
+- Level is all of the nodes at the same depth
+
+- Full binary tree is a tree in which every node other than the leaves has two children
+- Perfect Binary tree is one where all the leaves are at the same depth
+    - height = 2^(k+1) - 1 nodes
+    - leaves = 2^height
+
+- Traversals
+    - Inorder: l,n,r
+    - Preorder: n,l,r
+    - Postorder: l,r,n

@@ -1,0 +1,48 @@
+Searching notes
+
+- Data structures in this section are focused on in order sorted arrays
+- The sections to this folder are focused on Binary Search and General Search
+
+- Binary Search
+    - Binary Search is a natural elimination-based strategy
+    - The idea is to eliminate half the keys from consideration by keeping the keys in sorted order
+    - Algorithm
+        - If the search key is not equal to the middle element of the array, one of the two sets left or right can be eliminated
+    - Code with bug
+        - The error is in the assignment M = (L+U)//2 can lead to overflow
+
+        def bsearch(t, A):
+            L, U = 0, len(A) - 1
+            while L <= U:
+                M = (L + U) // 2
+                if A[M] < t:
+                    L = M + 1
+                elif A[M] == t:
+                    return M
+                else:
+                    U = M - 1
+                return -1
+    - Code corrected
+
+        def bsearch(t, A):
+            L, U = 0, len(A) - 1
+            while L <= U:
+                M = L + (U - L) //2
+                if A[M] < t:
+                    L = M + 1
+                elif A[M] == t:
+                    return M
+                else:
+                    U = M - 1
+                return -1
+
+- Searching
+    - Libraries
+        - The bisect module provides binary search functions for sorted list. 
+        - Assume A is a sorted list
+        - To find the first element that is not less than a targeted value use bisect.bisect_left(A,x)
+            - This call returns the index of the first entry that is greater than or equal to the target value
+           
+        - Same as above but for greater than the target value use bisect.bisect_right(A,x)
+            - This call returns the index of the first entry that is greater than the target value
+            

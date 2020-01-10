@@ -1,0 +1,47 @@
+Type: classification of data that spells out possible values for that type 
+    and the operations that can be performed on it
+
+In Python everything is an object
+
+Primitive types bootcamp
+    Different primitive types
+        - numerics (integer)
+        - sequences (list)
+        - mappings (dict)
+        - classes
+        - instances
+        - exceptions
+    - All the above are objects
+    
+    Max int value can be denoted with sys.maxsize
+    sys.maxsize is the systems word size specifically the maximum value of an integer
+
+    Bounds on float are specified by sys.float_info
+
+    Bitwise operations
+        &
+        |
+        >>
+        <<
+        ~
+        ^
+        Negatives are twos complement
+
+    Key methods for numerics
+        math.ceil()
+        math.floor()
+        min(x,y)
+        max(x,y)
+        pow(x,exp)
+        math.sqrt()
+        inf (infinity)
+    
+    When comparing floats use math.isclose()
+
+    Key methods in random
+        random.randrange()
+        random.randint()
+        random.random()
+        random.shuffle(A)
+        randome.choice(A)
+    
