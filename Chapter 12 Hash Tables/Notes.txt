@@ -1,0 +1,29 @@
+-A hash table is used to store keys with corresponding values.
+
+-Inserts, deletes, and lookups are in O(n) time
+
+-The underlying idea is to store the keys in an array
+    - store keys in "slots" (array locations) based on the hash code
+
+- Hash codes is an interger computed using the key
+    - If collisions occur the standard mechanism is to maintain a linked list of objects at each index
+        - If needed on average all functions take O(#ofObjects+1/SizeofA)
+        - If O(1+n/m) grows large rehashing can be applied to give more slots
+
+- Different than a sorted arrray, keys don't appear in order
+
+- Example hash function
+    def string_hash(s, modulus):
+        MULT = 997
+        return functools.reduce(lambda v, c: (v * MULT + ord(c)) % modulus, s, 0)
+
+- Bootcamp
+    - Anagrams
+    - Design
+
+- Libraries
+    - Multiple hash structs in python
+        - dict 
+        - set (only keys not key values)
+        - collections.defaultdict
+        - collections.Counter
