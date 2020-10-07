@@ -43,5 +43,5 @@ Primitive types bootcamp
         random.randint()
         random.random()
         random.shuffle(A)
-        randome.choice(A)
+        random.choice(A)
     

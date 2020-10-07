@@ -1,0 +1,30 @@
+Graphs Notes:
+    - Informal Definition: a graph is a set of vertices and conntected by edges.
+    - A directed graph is a set V of vertices and a set E in V x V edges.
+    - Given an edge e = (u,v) u is its source and v is its sink
+    - A directed acyclic graph (DAG) is a directed graph in which there are no cycles ie paths which
+        contain one or more edges and which begin and end at the same vertix
+
+    - Bootcamp: 
+        - Graphs are ideal for modeling and analyzing relationships between pairs of objects
+            - Example:
+                - suppose you were given a list of the outcomes of matches between pairs of teams
+                  with each outcome being a win or loss.
+                - Question Given a team A and B is there a sequence of matches such that each team beats the next
+                    in the sequence
+                - Model using a graph
+                    - Teams are vertices
+                    - Wins are edges
+                - Both BFS and DFS would work
+    
+        - spatially connected object modeling
+        - analyzing any binary relationships
+        - DFS works well for looking for structures or connected components
+        - Some problems related to optimization eg find shorts path from one vertex to another would
+            work well with BFS and Dijkstras shortest path  and minimum spanning tree
+        
+        - BFS and DFS differ from eachother in terms of the additional information they provide
+            - BFS
+                - Can compute distances from the start vertex
+            - DFS
+                - can check if cycles are present

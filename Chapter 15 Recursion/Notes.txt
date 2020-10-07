@@ -1,0 +1,17 @@
+Recursion Notes:
+    - Applicable for searching, enumeration, divide and conquer, and decomposing complex problems
+
+    - Consists of 
+        - Base case
+        - Recursive step
+
+    - Bootcamp
+        - Greatest comman diviser
+            def gcd(x, y):
+                return x if y == 0 else gcd(y, x%y)
+
+    - Quick Notes
+        - remove recursion the use the stack as a call stack structure
+        - use recursion to avoid deeply nested loops
+        - Recursion can be removed from a tail recursive program by using a while loop
+        - If a recursive function will call the itself with the same arguments cache the results

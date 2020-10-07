@@ -10,3 +10,10 @@ Helpful functions
 def insert_node(node, new_node):
     new_node.next_node = node.next_node
     node.next_node = new_node
+
+Boot camp:
+    - List problems have simple brute force O(n) space but require more subtle solutins
+    using existing list nodes
+    - Use dummy head to avoid cheching empty list
+    - Dont forget to update next
+    - Algorithms benefit from using two iterators

@@ -1,0 +1,14 @@
+Greedy algorithms and Invariant notes
+    - Greedy algorithms: an algorithm that computes solutions in steps,
+        at each step the algorithm makes a decision that is localy optimum
+    - Does not necessaryly perform optimum solutions
+    - Example
+        - British currency in coins: 30,24,12,6,3
+        - Goal: make change using the smallest number of coins
+        - Natural: Pick the largest coin and find coins for remainder
+        - Issue: for 48 we would have chosen 30, 12, 6 but we could have done 24,24
+    
+    - Bootcamp:
+        - often the right choice for optimization problems where theres a natural set of choices to select from
+        - Conceptualize it recursively but implement iteratively
+        - Sometimes the correct solution is not obvious

@@ -8,8 +8,10 @@ Instantiating
 Basic Operations
     len(A)
     A.append(10)
-    A.remove(2)
+    A.remove(2) // element
+    A.pop(3)    // index
     A.insert(3,28)
+
 
 2d arrays 
     [[0,1,2],[3,4,5]]

@@ -1,0 +1,20 @@
+BST notes
+    - Stored in sorted order
+    - Worst case lookup, insertion or deletions are O(n)
+    - Generally their lookup is O(log(n))
+    - Avoid placing mutable objects in BSTs
+
+    - General BST search
+        - Code:
+            def search_bst(tree, key):
+                return (tree if not tree or tree.data == key else search_bst(tree.left, key)
+                        if key < tree.data else search_bst(tree.right, key))
+        - Search is O(h) where h is the height of the tree
+    
+    - Can search in O(n) no matter what in sorted order
+    
+    - Some problems require a combination of a BST and a hashtable.
+        - For example if you insert student objects into a BST and entries are
+          are ordered by GPA then if a students gpa needs updating it would require to 
+          do a full traversal but with a hashtable we can quickly jump to the node
+    - A BST is a global property, a binary tree can have BST structure but it may not be a BST

@@ -1,0 +1,25 @@
+Naive sort:
+    - O(n^2)
+    - Linear find then linear place
+
+O(nlogn) Algorithms:
+    - Definitions
+        - stable: one where entries are equal appear in their original order
+        - in-place: O(1) space
+
+    -Types
+        - heap sort
+            - in place but not stable
+        - merge sort
+            - stable but not inplace
+        - quick sort
+            - runs O(n^2) worst case
+
+Special Scenarios
+    - short arrays < 10 insertion sort works best
+    - if every element is known to be at most k places from its final location a minheap is best for 
+        O(nlogk) sort
+    - if there are a small number of distinct keys ie [0...255] then counting sort
+        - Counting sort
+            - records for each element the number of elemts less than it
+            - keys are the numbers and values are their frequiences
