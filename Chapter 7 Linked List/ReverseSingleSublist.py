@@ -47,4 +47,10 @@ class TestReverseSublist(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    # unittest.main()
+    L1 = ListNode(11)
+    insert_node(L1, ListNode(2))
+    insert_node(L1, ListNode(3))
+    insert_node(L1, ListNode(5))
+    insert_node(L1, ListNode(7))
+    reverseSublist(L1, 2, 4)
